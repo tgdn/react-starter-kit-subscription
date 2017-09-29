@@ -1,0 +1,8 @@
+mutation PostMessageMutation($text: String!) {
+  postMessage(text: $text) {
+    id
+    text
+    createdAt
+    updatedAt
+  }
+}

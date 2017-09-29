@@ -1,0 +1,8 @@
+subscription onMessageCreated {
+  messageCreated {
+    id
+    text
+    createdAt
+    updatedAt
+  }
+}

@@ -1,0 +1,38 @@
+type Result {
+  success: Boolean!
+  message: String
+}
+
+# type User {
+#   id: ID!
+#   email: String
+#   fname: String!
+#   lname: String!
+#   avatarUrl: String!
+#   role: String!
+# }
+
+type Message {
+  id: ID!
+  text: String
+  createdAt: String
+  updatedAt: String
+}
+
+type Query {
+  messages: [Message]
+}
+
+type Mutation {
+  postMessage(text: String!): Message
+}
+
+type Subscription {
+  messageCreated: Message
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}
