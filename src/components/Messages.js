@@ -33,7 +33,7 @@ class Messages extends React.Component {
     super(props);
 
     /* keep track of subscription handle to not subscribe twice
-    which also handle unsubscribe */
+    which also handles unsubscribe */
     this.subscription = null;
   }
 
